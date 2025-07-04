@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <h2>Health Dashboard</h2>
+    <button id="toggle-dark">🌙</button>
+  </header>
+
+  <!-- User Info Card -->
+  <section class="card">
+    <h3>👤 Patient Info</h3>
+    <p><strong>Name:</strong> Rahul Sharma</p>
+    <p><strong>Age:</strong> 32</p>
+    <p><strong>Email:</strong> rahul@example.com</p>
+  </section>
+
+  <!-- Upload Section -->
+  <section class="card">
+    <h3>📤 Upload Health Record</h3>
+    <input type="file" id="fileInput" accept="application/pdf" />
+    <div id="pdfPreview" class="pdf-preview">No file selected</div>
+  </section>
+
+  <!-- Upload History -->
+  <section class="card">
+    <h3>📁 Upload History</h3>
+    <ul class="history">
+      <li>📝 Blood Test Report - 21/06/2025</li>
+      <li>📝 X-ray Report - 14/05/2025</li>
+      <li>📝 MRI Scan - 02/04/2025</li>
+    </ul>
+  </section>
+
+  
+  <script src="dashboard.js"></script>
+</body>
+</html>
